@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>note-cli - Terminal Notizen</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #0d1117; /* GitHub Dark Mode Hintergrund */
+            color: #c9d1d9;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            max-width: 600px;
+            background-color: #161b22;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            border: 1px solid #30363d;
+        }
+        h1 { color: #58a6ff; margin-top: 0; }
+        .terminal {
+            background-color: #000;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            color: #00ff00;
+            margin: 20px 0;
+        }
+        .badge {
+            display: inline-block;
+            background-color: #238636;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <span class="badge">v1.0.0</span>
+        <h1>note-cli</h1>
+        <p>Ein blitzschnelles, leichtgewichtiges Bash-Tool, um Notizen direkt in deinem Terminal zu speichern, zu verwalten und aufzulisten.</p>
+        
+        <h3>🚀 So einfach geht's:</h3>
+        <div class="terminal">
+            $ ./note.sh add "Meeting um 14 Uhr"<br>
+            > Notiz gespeichert! Hash: 8f4e2...<br><br>
+            $ ./note.sh list<br>
+            > 8f4e2... - Meeting um 14 Uhr
+        </div>
+
+        <p>Besuche das <a href="https://github.com/LukasHHN/note-cli.git" style="color: #58a6ff;">GitHub Repository</a> für die Installation und Dokumentation.</p>
+    </div>
+
+</body>
+</html>
